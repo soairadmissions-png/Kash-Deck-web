@@ -1,0 +1,8 @@
+{
+  "name": "Remix CashDeck - Calm Financial Command Center",
+  "description": "Simple, trustworthy financial management platform for personal and business finances in Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

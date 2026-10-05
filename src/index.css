@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    /* Responsive root typography scaling across mobile, tablet, and wide desktop */
+    font-size: clamp(13.5px, 0.35vw + 12px, 16px);
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Fluid responsive typography utilities */
+.text-responsive-heading {
+  font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);
+  line-height: 1.2;
+}
+
+.text-responsive-balance {
+  font-size: clamp(1.75rem, 3.5vw + 0.5rem, 2.75rem);
+  line-height: 1.15;
+}
+
+.text-responsive-subheading {
+  font-size: clamp(0.85rem, 1vw + 0.5rem, 1.125rem);
+  line-height: 1.4;
+}
+
+/* Custom scrollbars for clean look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.35);
+}
